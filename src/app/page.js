@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./style.css";
+
 export default function Home() {
   const productList = [
     {
@@ -94,13 +95,28 @@ export default function Home() {
       address: "3759 Oak Valley Park",
     },
   ];
-  const userList = productList.map(
-    firstName,
-    lastName,
-    phoneNumber,
-    email,
-    address,
-    companyName
-  );
-  console.log(userList);
+
+  const userList = productList.map((user) => {
+    return (
+      <div key={user.id} className="card">
+        <h2>
+          {user.firstName} {user.lastName}
+        </h2>
+        <p>
+          <strong>Email:</strong> {user.email}
+        </p>
+        <p>
+          <strong>Company:</strong> {user.companyName}
+        </p>
+        <p>
+          <strong>Phone:</strong> {user.phoneNumber}
+        </p>
+        <p>
+          <strong>Address:</strong> {user.address}
+        </p>
+      </div>
+    );
+  });
+
+  return <div>{userList}</div>;
 }
