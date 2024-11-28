@@ -21,13 +21,7 @@ div {
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
-
-/* .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-} */
 
 .leftSide {
   flex: 1;
@@ -64,4 +58,19 @@ p {
     min-width: 100%;
     align-items: center;
   }
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 95px;
+  margin-top: 40px;
+}
+.company {
+  position: absolute;
+  color: whitesmoke;
+  font-size: 14px;
+  margin-left: 82.5px;
+  margin-top: 85px;
+  font-weight: 900;
 }
